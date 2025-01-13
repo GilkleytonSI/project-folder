@@ -1,0 +1,138 @@
+.hero {
+    background: url('../images/local-espaco.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.cta {
+    background: #2149ca;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #2149ca;
+}
+
+footer p a:hover{
+    color: #fff;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;    
+    z-index: 1000;
+    display: none;
+    animation: bounce-in 1s ease;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: rotate(15deg);
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.show-whatsapp {
+    animation: bounce 1s;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-banner p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.cookie-banner a {
+    color: #ff5722;
+    text-decoration: underline;
+}
+
+.cookie-banner button {
+    margin-left: 10px;
+}
