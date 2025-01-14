@@ -4,22 +4,6 @@
 
 Este projeto consiste em uma landing page para promover um espaço de lazer com piscina, área gourmet e churrasqueira. A página é responsiva, possui integração com WhatsApp para contato rápido e utiliza cookies para melhorar a experiência do usuário.
 
-## Estrutura do Projeto
-
-O projeto está organizado da seguinte forma:
-
-project-folder/
-|-- index.html
-|-- assets/
-    |-- css/
-        |-- style.css
-    |-- js/
-        |-- script.js
-    |-- images/
-        |-- piscina.jpg
-        |-- area-gourmet.jpg
-        |-- churrasqueira.jpg
-        |-- local-espaco.jpg
 
 ## Arquivos Principais
 
